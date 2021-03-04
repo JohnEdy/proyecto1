@@ -6,6 +6,8 @@ alert("hola, voy a calcular la potencia cuadrada y cubica de este número");
 
 let numero = prompt("ingrese un numero");
 
-let resultado = parceInt(Math.pow(numero, 2 ** 3));
+let resultado = parseInt(Math.pow(numero, 2 ));
 
-alert("el resultado de esta operación es " + resultado);
+let potencia_cubica = parseInt(Math.pow(numero, 3));
+
+alert("la raiz cuadrada es  " + resultado + " y la potencia cubica es " + potencia_cubica);

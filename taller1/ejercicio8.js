@@ -5,13 +5,13 @@
 alert("hola quieres entrar al estadio?");
 
 let = valor_boleta = 8000;
-let = valor_personas =0;
+let = valor_disponible =20000;
 
-while(valor_boleta<=8000){
-    valor_boleta += parseInt(prompt('Ingrese su saldo disponible'));
-    valor_personas++;
-}
+let = personas_ingresan = valor_disponible/valor_boleta;
 
-alert("el numero de personas que puede ingresar es ${valor_boleta}");
-alert("el total de ingresos es de : ${valor_disponible}");
 
+
+alert (" El número de personas que puedan ingresar son " + personas_ingresan);
+
+
+// https://youtu.be/x-2Y9bOE5iE

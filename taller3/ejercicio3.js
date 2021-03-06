@@ -5,12 +5,12 @@ valor entrada = usuario
 
 */
 
-let numero = parseInt(prompt("Ingrese un numero para hallar por que numero es divisible"));
+let numero = parseInt(prompt("ingrese un numero para hallar por que numero es divisible"));
 
 
 for (let i = 1; i <= numero; i++) {
      if (numero%i === 0 ) {
-         console.log(i);
+         document.write(i);
          }
     }
 

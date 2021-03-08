@@ -10,7 +10,7 @@ let numero = parseInt(prompt("ingrese un numero para hallar por que numero es di
 
 for (let i = 1; i <= numero; i++) {
      if (numero%i === 0 ) {
-         document.write(i);
+         document.write(i + "<br>");
          }
     }
 

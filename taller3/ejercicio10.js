@@ -8,8 +8,18 @@ salida = sumar todos los enteros comprendidos entre uno y numero leido.
 
 */
 
-let numero = parseInt(prompt("Señor usuario ingresu un numero"));
 
-for (let i = 1; i <= numero; i++) {
-    document.write(i +"-" + numero);
+let numeros = 0;
+let inicial = 0;
+
+numeros = parseInt(Math.random() * (15 - 1) + 1);
+
+console.log("Aleatorio; "+numeros);
+for (let i = 1; i <= numeros; i++) {
+    inicial = inicial + i;
+    console.log(inicial);
 }
+
+inicial = inicial + numeros;
+
+console.log("Resultado: "+inicial)

@@ -5,8 +5,18 @@ entrada = numero usuario
 salida = mostrar el resultado
 */
 
-let numero = parseInt(prompt("Señor usuario ingrese un numero de dos digitos"));
+let numero = 0;
+let digito1 = 0;
+let digito2 = 0;
+let inicial = 0;
 
-for(let i=10; i <= 99; i++){
-    document.write("-" + i);
+numero = parseInt(Math.random() * (99 - 10) + 10);
+digito1 = numero.toString().substring(0,1);
+digito2 = numero.toString().substring(1,2);
+console.log("Aleatorio; "+numero);
+
+console.log("Digito: "+digito1+" Digito 2: "+digito2);
+
+for (let i = 1; i <= digito1; i++) {
+    console.log("Enteros Dígito 1: " + digito2 + "digito 1: " + digito2);
 }

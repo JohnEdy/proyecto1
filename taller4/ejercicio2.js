@@ -4,22 +4,22 @@ mayor número par leído.
 */
 
 
-var numeros = [];
+let vector = [];
+let numero = 0;
+let posicion = 0;
 
+//2. llenamos el vector
 for(let i=0; i<10; i++){
-    numeros[i] = parseInt(Math.random() * (100 - 0) + 0);
+    vector[i] = parseInt(Math.random() * (100 - 0) + 0);
 }
 
-console.log(numeros);
+console.log(vector);
 
-var numeroMayor = 0;
-var posicionMayor = 0
-
-for (let i = 0; i < numeros.length; i++) {
-    if (numeros[i] > numeroMayor && numeros[i]%2 == 0) {
-        numeroMayor = numeros[i];
-        posicionMayor = i + 1;
+for (let i = 0; i < vector.length; i++) {
+    if (vector[i] > numero) {
+        numero = vector[i];
+        posicion = i + 1;
     }
 }
 
-console.log("Su número mayor es: "+numeroMayor+" y su posición es: "+posicionMayor)
+console.log("El número mayor es: "+numero+" y su posición es: "+posicion);

@@ -7,6 +7,7 @@ mayor número par leído.
 let vector = [];
 let numero = 0;
 let posicion = 0;
+let numero_par = 0;
 
 //2. llenamos el vector
 for(let i=0; i<10; i++){
@@ -16,10 +17,13 @@ for(let i=0; i<10; i++){
 console.log(vector);
 
 for (let i = 0; i < vector.length; i++) {
-    if (vector[i] > numero) {
+    if (vector[i] > numero && vector[i] % 2 == 0) {
         numero = vector[i];
+        numero_par = numero % 2 == 0;
         posicion = i + 1;
+
     }
+
 }
 
-console.log("El número mayor es: "+numero+" y su posición es: "+posicion);
+console.log("El número mayor es par : " + numero+ " y su posición es: "+posicion);

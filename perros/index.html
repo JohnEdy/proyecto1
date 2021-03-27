@@ -91,35 +91,7 @@
 
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-      function callApi(){
-        var requestOptions = {
-          method: 'GET',
-          redirect: 'follow'
-        };
-
-        fetch("https://api.thedogapi.com/v1/images/search", requestOptions)
-          .then(response => response.json())
-          .then(result => printData(result))
-          .catch(error => console.log('error', error));
-      }
-
-    function printData(result){
-
-      const image = document.querySelector('#dog-photo');
-
-      image.setAttribute('src', `${result[0].url}`);
-
-      const title = document.querySelector('#dog-title');
-
-      title.textContent = `${result[0].breeds[0].name}`;
-
-      const temperament = document.querySelector('#dog-temperament');
-
-      temperament.textContent = `${result[0].breeds[0].temperament}`;
-    }
-
-    </script>
+    <script src="dogs.js"></script>
 
   </body>
 </html>
